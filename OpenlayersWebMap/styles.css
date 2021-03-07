@@ -1,0 +1,15 @@
+h2 {
+    text-align: right;
+}
+#map {
+    height: 400px;
+    width: 25%;
+    float: right;
+}
+#popup {
+    text-align: left;
+}
+
+#docsNearby {
+    display: block;
+}
