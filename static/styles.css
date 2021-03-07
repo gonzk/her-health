@@ -183,113 +183,50 @@ html, body {
   flex-direction: column;
   min-height: 100%;
 }
-.instant-search {
-  position: relative;
-  max-width: 250px;
-}
-
-.instant-search,
-.instant-search__input {
-  font-family: sans-serif;
-}
-
-.instant-search,
-.instant-search * {
-  transition: background 0.15s, box-shadow 0.15s;
-}
-
-.instant-search:focus-within {
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-}
-
-.instant-search--loading::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 2px;
-  background: #009578;
-  border-radius: 5px;
-  animation: searchIndicator 0.5s infinite ease-in-out;
-}
-
-@keyframes searchIndicator {
-  0% {
-    width: 15%;
-  }
-  50% {
-    width: 100%;
-  }
-  100% {
-    width: 15%;
-  }
-}
-
-.instant-search,
-.instant-search__input-container {
-  border-radius: 5px;
-}
-
-.instant-search__input-container {
-  display: inline-flex;
-  box-sizing: border-box;
-  width: 100%;
-  padding: 6px;
-  background: #eeeeee;
-}
-
-.instant-search__input-container:focus-within {
-  background: #ffffff;
-}
-
-.instant-search__input {
-  flex-grow: 1;
+/* Dropdown Button */
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
   border: none;
-  outline: none;
-  width: 100%;
-  padding: 0 6px;
-  background: transparent;
-}
-
-.instant-search__results-container {
-  max-height: 250px;
-  overflow-y: auto;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0.1s, opacity 0.1s;
-}
-
-.instant-search__results-container--visible {
-  visibility: visible;
-  opacity: 1;
-}
-
-.instant-search__result {
-  display: block;
-  color: #333333;
-  text-decoration: none;
-  padding: 10px;
-  font-size: 0.8em;
   cursor: pointer;
 }
 
-.instant-search__result:hover {
-  background: #eeeeee;
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
 }
 
-.instant-search__result:not(:last-of-type) {
-  border-bottom: 1px solid #eeeeee;
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-.instant-search__title {
-  font-size: 1.1em;
-  font-weight: bold;
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
-.instant-search__paragraph {
-  line-height: 1.5;
-  margin: 8px 0;
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
 
 
 /* Footer */
