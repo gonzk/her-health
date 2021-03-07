@@ -52,14 +52,23 @@
 
 <!--Image & Search-->
 <div class="home-img">
-    <div class="search-container">
-        <form action="/results.html">  <!-- TO DO FOR CHARU -->
-            <input type="text" placeholder="Search.." name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
-    </div>
+	<div class="search-container">
+		 <form>
+
+ 
+      <input type="text" placeholder="Search.." name="search" value="<%=searchTerm%>">
+<select name = "illnesses" onchange="this.form.submit()"> 
+<option value=""> All categories</option>
+<option value="Breast Cancer" <% if (illness == "Breast Cancer"){if %> selected <% } %> >Breast Cancer</option>
+<option value="endometriosis" <% if (illness == "endometriosis"){if %> selected <% } %> >endometriosis</option>
+<option value="Uterine fibroids" <% if (illness == "Uterine fibroids"){if %> selected <% } %> >Uterine fibroids</option>
+<option value="Cervical cancer" <% if (illness == "Cervical cancer"){if %> selected <% } %> >Cervical cancer</option>
+<option value="Ovarian cancer" <% if (illness == "Ovarian cancer"){if %> selected <% } %> >Ovarian cancer</option>
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+	</div>
     <img src="static/doc.svg" alt="doctors clip art" width="460" height="345">
-    <form></form>
+	<form></form>
 </div>
 <div class="mission">
     <h2>Our Mission</h2>
