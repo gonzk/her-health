@@ -5,6 +5,7 @@ h2 {
     height: 400px;
     width: 25%;
     float: right;
+   vertical-align: text-top;
 }
 #popup {
     text-align: left;
@@ -12,4 +13,5 @@ h2 {
 
 #docsNearby {
     display: block;
+   vertical-align: text-bottom;
 }
