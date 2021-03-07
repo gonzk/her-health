@@ -1,8 +1,8 @@
 /* Website */
 html, body {
     background-color: #FAEEE7;
-    /*width: 100%;*/
-    /*height: 100%;*/
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
     font-family: "Source Sans Pro";
@@ -12,32 +12,31 @@ html, body {
 
 .navbar-custom {
     background-color: #FAEEE7;
-	top: 0;
-	width: 100%;
-	/*position: fixed;*/
+    top: 0;
+    width: 100%;
+    /*position: fixed;*/
     color: #594A4E;
 
 }
 
 /* change the link color */
-.navbar-custom .navbar-nav .nav-link  {
-	text-decoration: none;
-	font-size: 20px;
+.navbar-custom .navbar-nav .nav-link {
+    text-decoration: none;
+    font-size: 15px;
 }
 
 .navbar-custom .navbar-nav {
-	text-align: center;
+    text-align: center;
     color: #FFC6C7;
 }
 
 .navbar-custom ul {
     position: relative;
 }
+
 .navbar-custom ul li {
-    padding: 2px;
-  margin: 2px;
-  text-align: center;
-  display:inline-block;
+    padding: 1px;
+    text-align: center;
 }
 
 .navbar-custom .navbar-text {
@@ -57,18 +56,18 @@ html, body {
     height: auto;
     opacity: 0.8;
 
-background-color: #FAEEE7;
-position: relative;
+    background-color: #FAEEE7;
+    position: relative;
     padding-bottom: 20px;
 }
 
 .home-img img {
-    right:10px;
+    right: 10px;
 }
 
 .search-container {
     position: absolute;
-    margin:0 auto;
+    margin: 0 auto;
     width: auto;
     right: 10px;
     bottom: 40px;
@@ -76,23 +75,23 @@ position: relative;
 }
 
 .search-container input,
-.search-container button {
+.search-container button{
     border: 3px solid #FFC6C7;
     border-radius: 10px;
-    padding: 2px 23px 2px 30px;
     outline: 0;
-    font-family: "Source Sans Pro";
+    font-family: Source Sans Pro;
     background-color: white;
     color: #FFC6C7;
 }
 
-.search-container button i {
+.search-container button i,
+.navbar-custom .search-input .navbar-form button {
     color: #FFC6C7;
 }
 
 .mission {
     /*float: left;*/
-   position: relative;
+    position: relative;
     padding: 20px;
     text-align: center;
 
@@ -111,7 +110,7 @@ position: relative;
 
 /* Slideshow */
 .services-slideshow {
-  position: relative;
+    position: relative;
 }
 
 .services-slideshow h2 {
@@ -120,9 +119,9 @@ position: relative;
 
 /* Slides */
 .services {
-  display: none;
-  padding: 50px;
-  text-align: center;
+    display: none;
+    padding: 50px;
+    text-align: center;
 }
 
 .services-slideshow .services h2 {
@@ -144,67 +143,57 @@ position: relative;
 
 /* Next & previous buttons */
 .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -30px;
-  padding: 16px;
-  color: #888;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-    background-color: #FFC6C7;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+
 }
 
 /* Position the "next button" to the right */
 .next {
-  position: absolute;
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: #867FF4;
-  color: white;
+    background-color: #867FF4;
+    color: white;
 }
 
 /* The dot/bullet/indicator container */
 .dot-container {
-  text-align: center;
-  padding: 20px;
-  background: #ddd;
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+.illness-info {
+    background-color: white;
+    display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
-
-/* Add a background color to the active dot/circle */
-.active, .dot:hover {
-  background-color: #717171;
-}
-
 
 
 /* Footer */
+
 footer {
-	background-color: #FFC6C7;
-	text-align: center;
-	color: white;
-	position: fixed;
-	left: 0;
-    bottom: 0;
+    background-color: #FFC6C7;
+    text-align: center;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 2px;
     width: 100%;
-	height: 5rem;
+    height: 5rem;
 }
