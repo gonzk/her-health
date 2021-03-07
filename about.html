@@ -22,54 +22,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-<body>
-    <style>
-        /* Dropdown Button */
-.dropbtn {
-  background-color: #3498DB;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #2980B9;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
-    </style>
-<nav class="navbar navbar-expand-md navbar-custom navbar-light sticky-top">
+<body style="background-color: white"> <!-- from https://www.w3schools.com/howto/howto_css_team.asp -->
+<nav class="navbar navbar-expand-md navbar-custom navbar-light sticky-top" style="background-color: #FAEEE7">
     <a class="navbar-brand" href="home.html"><img src="static/logo.png" width="275"></a>
     <p class="navbar-text" style="color: #FFC6C7;">Better knowledge. Better health.</p>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNav">
@@ -91,67 +45,85 @@
                 <a class="nav-link" href="about.html">About</a>
 
             </li>
+            <li class="nav-item search-nav">
+
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search"
+                           style="border: 3px solid #FFC6C7; border-radius: 10px;">
+                    <button type="submit"
+                            style="border: 3px solid #FFC6C7; border-radius: 10px; background-color: white">
+                        <i class="fa fa-search"
+                           style="border: 0px solid #FFC6C7; color: #FFC6C7; border-radius: 10px; background-color: white"></i>
+                    </button>
+                </form>
+            </li>
         </ul>
     </div>
-
+    </div>
 </nav>
-<div class="home-img">
-    <div class="search-container">
-        <form action="/results.html">
-            <input type="text" placeholder="Search.." name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
-    </div>
-    <div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="alzheimers-disease.html">Alzheimers</a>
-    <a href="breast-cancer.html">Breast Cancer</a>
-    <a href="about.html">About herHealth</a>
-     <a href="home.html">Home</a>
-  </div>
-    <img src="static/doc.svg" alt="doctors clip art" width="460" height="345">
-    <form></form>
-</div>
-<div class="mission">
-    <h2>Our Mission</h2>
-    <div class="mission-text">
-        <p>Finding healthcare should not be difficult. We wanted to create an easy and accessable way for women* to be
-            able
-            to find specialized health professionals for all their health concerns. We have also created an expansive
-            database
-            of medical knowledge so that you can better understand your own body and functions</p>
-    </div>
-</div>
-<div class="services-slideshow">
-    <h2>Our Services</h2>
-    <div class="services">
-        <h3>Database</h3>
-        <p>
-            We have created an extensive database of medical information regarding the most prevalent concerns in
-            women's*
-            health. Simply type a symptom or illness into the search bar to access up to date medical knowledge and
-            nearby
-            resources.
-        </p>
-    </div>
-    <div class="services">
-        <h3>Find a Doc</h3>
-        <p>
-            Finding the perfect doctor can be daunting, that's why we wanted to create a way for women to shop for the
-            right
-            doctor. Filter by location, specialization, gender, insurance, and your desired service.
-        </p>
-    </div>
 
-    <!-- Arrows -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-    <!-- Dots/bullets/indicators -->
-    <div class="dot-container">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
+<div class="about" style="background-color: white">
+    <div class="row">
+        <div class="column col-3">
+            <div class="card">
+                <img src="static/tiffany.png" alt="Tiffany" style="width:100%">
+                <div class="container">
+                    <h2>Tiffany Chang</h2>
+                    <p class="title">Designer</p>
+                    <p>Designed the web prototype.</p>
+                    <p>
+                        <button class="button">Contact</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column col-3">
+            <div class="card">
+                <img src="static/kristine.jpg" alt="Kristine" style="width:100%">
+                <div class="container">
+                    <h2>Kristine Gonzales</h2>
+                    <p class="title">Fullstack Developer</p>
+                    <p>Implemented the Python script to webscrape MayoClinic websites on illnesses prevalent in women.
+                        Utilized HTML, CSS and Bootstrap to design the website based on the web prototypes.</p>
+                    <p>
+                        <button class="button">Contact</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column col-3">
+            <div class="card">
+                <img src="static/elsie.jpg" alt="Elsie" style="width:100%;">
+                <div class="container">
+                    <h2>Elsie Lee</h2>
+                    <p class="title">Backend Developer</p>
+                    <p>Rendered map with markers to reflect doctors nearest to user with a list of pertinent doctor
+                        information underneath.</p>
+                    <p>
+                        <button class="button">Contact</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="colum col-3">
+            <div class="card">
+                <img src="static/charu.jpg" alt="Charu" style="width:100%">
+                <div class="container">
+                    <h2>Charu Idnani</h2>
+                    <p class="title">Backend Developer</p>
+                    <p>Created the herHealth* database with details of different doctors, their map rendered locations
+                        and
+                        specialities. Assisted with search-button integration and design elements.</p>
+                    <p>
+                        <button class="button">Contact</button>
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -164,7 +136,6 @@
 
         <!-- Grid column -->
         <div class="col-md-12">
-
 
             <!-- Copyright -->
             <div class="footer-copyright">Copyright © 2021 herHealth*</a>
@@ -219,21 +190,4 @@
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
     }
-    function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
 </script>
