@@ -67,6 +67,15 @@
       <button type="submit"><i class="fa fa-search"></i></button>
     </form>
 	</div>
+		<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="alzheimers-disease.html">Alzheimers</a>
+    <a href="breast-cancer.html">Breast Cancer</a>
+    <a href="about.html">About herHealth</a>
+     <a href="home.html">Home</a>
+  </div>
+</div>
     <img src="static/doc.svg" alt="doctors clip art" width="460" height="345">
 	<form></form>
 </div>
@@ -177,4 +186,24 @@
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
     }
+	
+	function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
 </script>
