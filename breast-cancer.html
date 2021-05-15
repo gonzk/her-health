@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>herHealth*</title>
     <link rel="icon" href="static/icon.png" type="image/x-icon">
@@ -8,177 +9,194 @@
     <link rel="stylesheet" href="static/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-            crossorigin="anonymous"></script>
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
+
 <body>
     <style>
-    
-    /* Dropdown Button */
-.dropbtn {
-  background-color: #3498DB;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
+        /* Dropdown Button */
+        .dropbtn {
+            background-color: #3498DB;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
 
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #2980B9;
-}
+        /* Dropdown button on hover & focus */
+        .dropbtn:hover,
+        .dropbtn:focus {
+            background-color: #2980B9;
+        }
 
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
 
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd}
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #ddd
+        }
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
+        /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+        .show {
+            display: block;
+        }
     </style>
-<nav class="navbar navbar-expand-md navbar-custom navbar-light sticky-top">
-    <a class="navbar-brand" href="home.html"><img src="static/logo.png" width="275"></a>
-    <p class="navbar-text" style="color: #FFC6C7;">Better knowledge. Better health.</p>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNav">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+    <nav class="navbar navbar-expand-md navbar-custom navbar-light sticky-top">
+        <a class="navbar-brand" href="home.html"><img src="static/logo.png" width="275"></a>
+        <p class="navbar-text" style="color: #FFC6C7;">Better knowledge. Better health.</p>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="collapse navbar-collapse" id="collapsibleNav">
-        <ul class="navbar-nav ml-auto" style="text-align: center; color: #594A4E">
-            <li class="nav-item">
-                <a class="nav-link" href="home.html">Home</a>
+        <div class="collapse navbar-collapse" id="collapsibleNav">
+            <ul class="navbar-nav ml-auto" style="text-align: center; color: #594A4E">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
 
-            </li>
+                </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="doc.html">Find a Doc</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="doc.html">Find a Doc</a>
 
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
 
-            </li>
-            <li class="nav-item search-nav">
+                </li>
+                <li class="nav-item search-nav">
 
-        <form action="/action_page.php">
-          <input type="text" placeholder="Search.." name="search" style="border: 3px solid #FFC6C7; border-radius: 10px;">
-          <button type="submit" style="border: 3px solid #FFC6C7; border-radius: 10px; background-color: white">
-              <i class="fa fa-search" style="border: 0px solid #FFC6C7; color: #FFC6C7; border-radius: 10px; background-color: white"></i>
-          </button>
-            <div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="alzheimers-disease.html">Alzheimers</a>
-    <a href="breast-cancer.html">Breast Cancer</a>
-    <a href="about.html">About herHealth</a>
-     <a href="home.html">Home</a>
-  </div>
-        </form>
-            </li>
-        </ul>
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Search.." name="search"
+                            style="border: 3px solid #FFC6C7; border-radius: 10px;">
+                        <button type="submit"
+                            style="border: 3px solid #FFC6C7; border-radius: 10px; background-color: white">
+                            <i class="fa fa-search"
+                                style="border: 0px solid #FFC6C7; color: #FFC6C7; border-radius: 10px; background-color: white"></i>
+                        </button>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="alzheimers-disease.html">Alzheimers</a>
+                                <a href="breast-cancer.html">Breast Cancer</a>
+                                <a href="about.html">About herHealth</a>
+                                <a href="home.html">Home</a>
+                            </div>
+                    </form>
+                </li>
+            </ul>
         </div>
-</div>
-</nav>
+        </div>
+    </nav>
 
-<div class="container illness-info">
-    <div class="overview">
-        <h2>Overview</h2>
-        <p>Breast cancer is cancer that forms in the cells of the breasts.
-</p>
+    <div class="container illness-info">
+        <div class="overview">
+            <h2>Overview</h2>
+            <p>Breast cancer is cancer that forms in the cells of the breasts.
+            </p>
+        </div>
+        <div class="symptoms">
+            <h2>Symptoms</h2>
+            <ul>
+                <li>A breast lump or thickening that feels different from the surrounding tissue</li>
+                <li>Change in the size, shape or appearance of a breast</li>
+                <li>Changes to the skin over the breast, such as dimpling</li>
+                <li>A newly inverted nipple</li>
+                <li>Peeling, scaling, crusting or flaking of the pigmented area of skin surrounding the nipple (areola)
+                    or breast skin</li>
+                <li>Redness or pitting of the skin over your breast, like the skin of an orange</li>
+            </ul>
+        </div>
+
+        <div class="causes">
+            <h2>Causes</h2>
+            <ul>
+                <li>Being female. Women are much more likely than men are to develop breast cancer.</li>
+                <li>Increasing age. Your risk of breast cancer increases as you age.</li>
+                <li>A personal history of breast conditions. If you've had a breast biopsy that found lobular carcinoma
+                    in situ (LCIS) or atypical hyperplasia of the breast, you have an increased risk of breast cancer.
+                </li>
+                <li>A personal history of breast cancer. If you've had breast cancer in one breast, you have an
+                    increased risk of developing cancer in the other breast.</li>
+                <li>A family history of breast cancer. If your mother, sister or daughter was diagnosed with breast
+                    cancer, particularly at a young age, your risk of breast cancer is increased. Still, the majority of
+                    people diagnosed with breast cancer have no family history of the disease.</li>
+            </ul>
+        </div>
+
+        <div class="source">
+            <a href=https://www.mayoclinic.org/diseases-conditions/breast-cancer/symptoms-causes/syc-20352470>Source</a>
+        </div>
     </div>
-    <div class="symptoms">
-        <h2>Symptoms</h2>
-        <ul>
-            <li>A breast lump or thickening that feels different from the surrounding tissue</li>
-            <li>Change in the size, shape or appearance of a breast</li>
-            <li>Changes to the skin over the breast, such as dimpling</li>
-            <li>A newly inverted nipple</li>
-            <li>Peeling, scaling, crusting or flaking of the pigmented area of skin surrounding the nipple (areola)
-                or breast skin</li>
-            <li>Redness or pitting of the skin over your breast, like the skin of an orange</li>
-        </ul>
-    </div>
-
-    <div class="causes">
-        <h2>Causes</h2>
-        <ul>
-            <li>Being female. Women are much more likely than men are to develop breast cancer.</li>
-            <li>Increasing age. Your risk of breast cancer increases as you age.</li>
-            <li>A personal history of breast conditions. If you've had a breast biopsy that found lobular carcinoma in situ (LCIS) or atypical hyperplasia of the breast, you have an increased risk of breast cancer.</li>
-            <li>A personal history of breast cancer. If you've had breast cancer in one breast, you have an increased risk of developing cancer in the other breast.</li>
-            <li>A family history of breast cancer. If your mother, sister or daughter was diagnosed with breast cancer, particularly at a young age, your risk of breast cancer is increased. Still, the majority of people diagnosed with breast cancer have no family history of the disease.</li>
-        </ul>
-    </div>
-
-    <div class="source">
-        <a href= https://www.mayoclinic.org/diseases-conditions/breast-cancer/symptoms-causes/syc-20352470>Source</a>
-    </div>
-</div>
 
 
-<!-- Footer -->
-<footer class="page-footer fixed-bottom d-flex justify-content-center mt-auto">
+    <!-- Footer -->
+    <footer class="page-footer fixed-bottom d-flex justify-content-center mt-auto">
 
-    <!-- Footer Elements -->
-    <div class="d-inline-flex p-3 footer-elements">
+        <!-- Footer Elements -->
+        <div class="d-inline-flex p-3 footer-elements">
 
-        <!-- Grid column -->
-        <div class="col-md-12">
+            <!-- Grid column -->
+            <div class="col-md-12">
 
 
-            <!-- Copyright -->
-            <div class="footer-copyright">Copyright © 2021 herHealth*</a>
-                <p style="font-size: xx-small">We would like to acknowledge that "her" and "women" are not an accurate
-                    pronoun for many people.
-                    We use * to specifically and intentionally include cis and trans women, as well as women-identifying
-                    non-binary,
-                    agender, or intersex people and other gender minorities. (Credits to cmd-f for this statement)</p>
+                <!-- Copyright -->
+                <div class="footer-copyright">Copyright © 2021 herHealth*</a>
+                    <p style="font-size: xx-small">We would like to acknowledge that "her" and "women" are not an
+                        accurate
+                        pronoun for many people.
+                        We use * to specifically and intentionally include cis and trans women, as well as
+                        women-identifying
+                        non-binary,
+                        agender, or intersex people and other gender minorities. (Credits to cmd-f for this statement)
+                    </p>
+                </div>
+                <!-- Copyright -->
+
             </div>
-            <!-- Copyright -->
+            <!-- Grid column -->
 
         </div>
-        <!-- Grid column -->
+        <!-- Footer Elements -->
 
-    </div>
-    <!-- Footer Elements -->
-
-</footer>
-<!-- Footer -->
+    </footer>
+    <!-- Footer -->
 </body>
+
 </html>
 
 <!--JavaScript source: https://www.w3schools.com/howto/howto_js_quotes_slideshow.asp-->
@@ -214,20 +232,20 @@
         dots[slideIndex - 1].className += " active";
     }
     function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
+        document.getElementById("myDropdown").classList.toggle("show");
     }
-  }
-}
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
 </script>
